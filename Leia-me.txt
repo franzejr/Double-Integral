@@ -1,0 +1,20 @@
+Integral Dupla
+____________________
+
+Para executar:
+No terminal:
+	$python trabalho7.py
+
+Limites de Integracao:
+Integral Externa: a, b
+Integral Interna: g1(x),g2(x)
+
+A Funcao para integracao eh fx e ela
+se encontra no arquivo Funcao.py
+	def fx(x,y):
+		return x*y
+
+As funcoes g1(x) e g2(x) se encontram
+no arquivo: Funcao.py
+Os limites de Integracao a,b ira ser
+pedido ao executar o programa.
