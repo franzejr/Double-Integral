@@ -51,8 +51,7 @@ def newtonCotesFechado(metodo):
 
 def cabecalho():
 	print "Trabalho 7 - Metodos Numericos - Integral Dupla\n"
-	print "Voce deve inserir:<metodo> a b\n"
-	print  "<metodo> = trapezio, simpson, simpson38, boole, legendre\n"
+	print  "Eh possivel escolher <metodo> = trapezio, simpson, simpson38, boole, legendre\n"
 	print "Se for NewtonCotes Aberto ou Fechado o programa ira perguntar depois\n"
 	print "Se for GaussLegendre ira perguntar com quantos pontos depois\n"
 
@@ -67,7 +66,6 @@ def main():
 	a = float(raw_input("Qual o a?"))
 	b = float(raw_input("Qual o b?"))
 	numParticoes = int(raw_input("Quantas Particoes?"))
-
 
 	#Quadratura Externa eh NewtonCotes
 	if (metodo != "legendre"):
@@ -86,7 +84,7 @@ def main():
 			
 			x = a + (i-1)*h
 			#Decidindo qual quadratura interna
-			metodoInterno = raw_input("Qual quadratura interna?")
+			metodoInterno = raw_input("Qual quadratura interna?\n<metodo> = trapezio, simpson, simpson38, boole, legendre\n")
 			if(metodoInterno.lower() != "legendre"):
 				#Chamando para o interno
 				metodoIntegracao = escolherAbertoFechado(metodoInterno)

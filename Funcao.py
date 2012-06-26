@@ -44,11 +44,12 @@ class Funcao:
 		#print  "y: ", y
 		return fx(self.x,y)
 
-#Funcoes para a parametrizacao
+#Funcoes para a parametrizacao (funcao da integral interna)
 def g1(x):
 	return 0.0
 def g2(x):
 	return 4.0
 
+#Funcao que fica dentro da integral dupla, ela precisa de dois parametros
 def fx(x,y):
-	return x*y;
+	return x*y + 34;
